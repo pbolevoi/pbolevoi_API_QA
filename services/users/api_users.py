@@ -18,7 +18,7 @@ class UsersAPI(Helper):
     @allure.step('Create user')
     def create_user(self):
         response = requests.post(
-            url=self.endpoinst.create_user,
+            url=self.endpoints.create_user,
             headers=self.headers.basic,
             json=self.payloads.create_user
         )
